@@ -131,12 +131,12 @@ export default function Home() {
 
   return (
     <div className="bg-[#f8f8f8] font-sans flex flex-col  w-full min-h-[100vh]">
-      <nav className=" md:p-8 p-4 bg-white">
+      <nav className=" md:px-8 md:py-4 p-4 bg-white">
         <Image src={logo} width={"97"} height={"52"} alt="" />
       </nav>
 
       <section className="flex flex-col w-full  md:w-fit md:px-8 px-4 py-4 gap-2">
-        <h3 className="font-medium font-sans w-full md:w-fit md:text-[32px] text-[24px]">
+        <h3 className="font-medium font-sans text-lg w-full md:w-fit md:text-[32px] text-[24px]">
           Got a complaint or feedback?
         </h3>
         <div className=" flex w-full">
@@ -164,7 +164,7 @@ export default function Home() {
               alt=""
             />
           </aside>
-          <p className="items-center w-full text-[#555B64] flex">
+          <p className="items-center w-full text-sm text-[#555B64] flex">
             Our support team is ready to listen and resolve.
           </p>
         </div>
@@ -174,7 +174,7 @@ export default function Home() {
         <aside className="flex lg:w-[60%] xl:w-[50%] 2xl:w-[35%] justify-between overflow-x-auto space-x-3  w-full md:w-[80%]   items-center">
           <button
             onClick={() => setFilter("")}
-            className={`px-6 py-2 font-medium cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
+            className={`px-6 py-2 font-medium cursor-pointer text-sm border-2 outline-0 rounded-xl transition-colors duration-200 ${
               filter === ""
                 ? "bg-[#EDFFFF] border-[#9FDCE1]"
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
@@ -184,7 +184,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => setFilter("bug")}
-            className={`px-6 py-2 font-medium cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
+            className={`px-6 py-2 font-medium text-sm cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
               filter === "bug"
                 ? "bg-[#EDFFFF] border-[#9FDCE1]"
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
@@ -194,7 +194,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => setFilter("feature")}
-            className={`px-6 py-2 font-medium cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
+            className={`px-6 py-2 font-medium cursor-pointer text-sm border-2 outline-0 rounded-xl transition-colors duration-200 ${
               filter === "feature"
                 ? "bg-[#EDFFFF] border-[#9FDCE1]"
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
@@ -204,7 +204,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => setFilter("other")}
-            className={`px-6 py-2 font-medium cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
+            className={`px-6 py-2 font-medium cursor-pointer text-sm lg:text-sm border-2 outline-0 rounded-xl transition-colors duration-200 ${
               filter === "other"
                 ? "bg-[#EDFFFF] border-[#9FDCE1]"
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
@@ -216,7 +216,7 @@ export default function Home() {
 
         <button
           onClick={() => setIsModalOpen(true)}
-          className="group flex items-center gap-1 p-3 cursor-pointer rounded-3xl outline-0 bg-[#006D79] text-white border-[#006D79] border-2 hover:bg-white hover:text-[#006D79] hover:border-[#006D79] hover:border-2"
+          className="group flex items-center gap-1 p-2.5 text-base cursor-pointer rounded-3xl outline-0 bg-[#006D79] text-white border-[#006D79] border-2 hover:bg-white hover:text-[#006D79] hover:border-[#006D79] hover:border-2"
         >
           <FiPlus className="text-white text-xl group-hover:text-[#006D79]" />
           Submit New Feedback
