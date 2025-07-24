@@ -171,7 +171,7 @@ export default function Home() {
       </section>
 
       <section className="flex justify-between w-full items-start lg:items-center md:px-8 px-4 py-4 gap-4 flex-col lg:flex-row">
-        <aside className="flex lg:w-[60%] xl:w-[50%] 2xl:w-[40%] justify-between  w-full md:w-[90%]   items-center">
+        <aside className="flex lg:w-[60%] xl:w-[50%] 2xl:w-[35%] justify-between overflow-x-auto space-x-3  w-full md:w-[80%]   items-center">
           <button
             onClick={() => setFilter("")}
             className={`px-6 py-2 font-medium cursor-pointer border-2 outline-0 rounded-xl transition-colors duration-200 ${
@@ -190,7 +190,7 @@ export default function Home() {
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
             }`}
           >
-            Bugs Only
+            Bugs
           </button>
           <button
             onClick={() => setFilter("feature")}
@@ -200,7 +200,7 @@ export default function Home() {
                 : "bg-white border-[#EAECF0]  hover:border-[#9FDCE1]"
             }`}
           >
-            Feature Requests
+            Features
           </button>
           <button
             onClick={() => setFilter("other")}
